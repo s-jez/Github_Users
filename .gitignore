@@ -1,0 +1,4 @@
+# Remove sass files
+styles.scss
+styles.css.map
+settings.json
