@@ -1,15 +1,18 @@
 import { fetchData } from "./fetchData.js";
-const btnUserSearch = document.querySelector(".user-search");
 const userInfo = document.querySelector(".user-info");
+const btnUserSearch = document.querySelector(".user-search");
+const apiURL = "https://api.github.com/users/";
 
 btnUserSearch.addEventListener("click", () => {
   let userInput = document.getElementById("user-input").value;
-  let apiURL = `https://api.github.com/users/${userInput}`;
-  fetchData(apiURL).then((data) => {
-    createUserElements(data.avatar_url, data.login);
+  const apiUserURL = apiURL + userInput;
+  // Fetch User data
+  fetchData(apiUserURL).then((data) => {
+    showUserInfo(data.avatar_url, data.login);
   });
 });
-const createUserElements = (urlImage, userText) => {
+
+const showUserInfo = (urlImage, userText) => {
   userInfo.innerHTML = "";
   if (urlImage === undefined || userText === undefined) {
     return;
