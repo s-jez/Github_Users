@@ -50,14 +50,20 @@ main .user-info {
   align-items: center;
   padding: 20px;
 }
-main .user-info ul {
-  list-style: none;
-}
 main .user-info p {
   margin: 5px;
 }
 
-@media (max-width: 728px) {
+a {
+  text-decoration: none;
+  color: rgb(125, 74, 125);
+}
+
+ul {
+  list-style: none;
+}
+
+@media (max-width: 1024px) {
   main {
     width: 70%;
   }
