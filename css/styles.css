@@ -92,4 +92,25 @@ ul {
 
 .issue p, .issue a {
   margin: 5px;
+}
+
+.raiting {
+  display: flex;
+}
+
+.plus, .minus {
+  padding: 10px;
+  margin: 10px;
+}
+
+.plus {
+  background-color: green;
+}
+
+.minus {
+  background-color: red;
+}
+
+.plus:hover, .minus:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
