@@ -63,8 +63,33 @@ ul {
   list-style: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1224px) {
   main {
     width: 70%;
   }
+}
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  .issues {
+    width: 80%;
+    margin: auto;
+  }
+}
+.issue {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(199, 199, 199);
+  border-radius: 10px;
+}
+
+.issue p, .issue a {
+  margin: 5px;
 }/*# sourceMappingURL=styles.css.map */
