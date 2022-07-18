@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-  background-color: #f5f5f5;
+  background-color: rgb(51, 90, 245);
   padding: 25px;
 }
 
@@ -23,7 +23,7 @@ nav ul li {
 }
 nav ul a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 main {
@@ -34,7 +34,7 @@ main {
   align-items: center;
   padding: 40px;
   margin-top: 25px;
-  background-color: #f5f5f5;
+  background-color: rgba(199, 199, 199, 0.374);
   border-radius: 20px;
 }
 main input, main button {
@@ -42,6 +42,23 @@ main input, main button {
   padding: 10px;
   font-size: 16px;
   margin: 5px;
+}
+main input {
+  border: 0;
+  border-radius: 20px;
+  background-color: #333;
+  color: #fff;
+}
+main button {
+  background-color: rgb(51, 90, 245);
+  border: 0;
+  color: #fff;
+  border-radius: 20px;
+}
+main button:hover {
+  cursor: pointer;
+  background-color: rgb(96, 126, 247);
+  transition: background-color 2s ease-in;
 }
 main .user-info {
   width: 100%;
@@ -52,6 +69,10 @@ main .user-info {
 }
 main .user-info p {
   margin: 5px;
+}
+main h1, main label {
+  margin: 10px;
+  color: #fff;
 }
 
 a {
@@ -101,16 +122,23 @@ ul {
 .plus, .minus {
   padding: 10px;
   margin: 10px;
+  border: 0;
+  border-radius: 20px;
 }
 
 .plus {
-  background-color: green;
+  background-color: rgb(64, 156, 64);
 }
 
 .minus {
-  background-color: red;
+  background-color: rgb(228, 76, 76);
 }
 
 .plus:hover, .minus:hover {
   cursor: pointer;
+}
+
+.repo-info {
+  padding: 20px;
+  border-radius: 20px;
 }/*# sourceMappingURL=styles.css.map */

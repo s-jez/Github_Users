@@ -19,6 +19,7 @@ btnUserSearch.addEventListener("click", () => {
     .catch((error) => {
       if (error != null) {
         errorMsg.textContent = error;
+        errorMsg.style.color = "white";
       }
     });
   const apiReposURL = apiURL + userInput + "/repos";
@@ -38,9 +39,11 @@ const showUserInfo = (urlImage, userText, htmlURL) => {
   const userNick = document.createElement("h3");
   userImage.src = urlImage;
   userImage.style.width = "55%";
+  userImage.style.borderRadius = "60px";
   userProfile.href = htmlURL;
   userProfile.textContent = userText;
   userProfile.target = "_blank";
+  userProfile.style.color = "#fff";
   userNick.appendChild(userProfile);
   userInfo.appendChild(userImage);
   userInfo.appendChild(userNick);
@@ -58,12 +61,15 @@ const showRepoInfo = (repo) => {
     const repoLinkElement = document.createElement("a");
     ul.appendChild(li);
     li.textContent = index + ": ";
+    li.style.color = "#333";
     li.appendChild(repoLinkElement);
+    repoLinkElement.style.color = "#432d4a";
     repoLinkElement.href = el;
     repoLinkElement.textContent = el;
     repoLinkElement.target = "_blank";
   });
   p.textContent = "Repositories: " + countRepos;
+  repoInfo.style.background = "rgb(199, 199, 199)";
   repoInfo.appendChild(p);
   repoInfo.appendChild(ul);
 };
