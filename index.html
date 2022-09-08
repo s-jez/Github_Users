@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Github Users</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/issues">Issues</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h1>Github Users</h1>
-      <label for="user">Enter github username</label>
-      <input type="text" id="user-input" />
-      <button class="user-search">Search user</button>
-      <div class="user-info"></div>
-      <div class="repo-info"></div>
-      <div class="error"></div>
-    </main>
-    <script src="/js/user-search.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Github Users</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/issues">Issues</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Github Users</h1>
+    <label for="user">Enter github username</label>
+    <input type="text" id="user-input" />
+    <button class="user-search">Search user</button>
+    <div class="user-info"></div>
+    <div class="repo-info"></div>
+    <div class="error"></div>
+  </main>
+  <script src="./js/user-search.js" type="module"></script>
+</body>
+
 </html>

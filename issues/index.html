@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Github Issues</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/issues/">Issues</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h1>Github Issues</h1>
-      <label for="user">Enter repo name:</label>
-      <input type="text" id="user-input" />
-      <button class="user-issues">Search repo issues</button>
-      <ul class="issues"></ul>
-      <div class="error"></div>
-    </main>
-    <script src="/js/issues-search.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Github Issues</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/issues/">Issues</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Github Issues</h1>
+    <label for="user">Enter repo name:</label>
+    <input type="text" id="user-input" />
+    <button class="user-issues">Search repo issues</button>
+    <ul class="issues"></ul>
+    <div class="error"></div>
+  </main>
+  <script src="./js/issues-search.js" type="module"></script>
+</body>
+
 </html>
